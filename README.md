@@ -76,7 +76,27 @@ cd NTradeSimulator
 
 ```
 
-### 3. Install Third-Party Dependencies
+### 3. Set Up a Virtual Environment (Optional but Recommended)
+
+To isolate dependencies and keep your global operating system's Python environment clean, you can initialize a local virtual environment:
+
+* **On Windows:**
+
+```bash
+  python -m venv venv
+  venv\Scripts\activate
+
+```
+
+* **On macOS / Linux:**
+
+```bash
+  python3 -m venv venv
+  source venv/bin/activate
+
+```
+
+### 4. Install Third-Party Dependencies
 
 Deploy the necessary layout libraries and real-time stock routing packages via pip:
 
@@ -85,7 +105,7 @@ pip install rich yfinance ccxt requests
 
 ```
 
-### 4. Boot the Simulation Engine
+### 5. Boot the Simulation Engine
 
 Execute the core runtime entry point file to initialize the retro-cyber splash interface:
 
